@@ -1,0 +1,4 @@
+
+# If enabled will show the percent grown in the infotext (when being looked at)
+# Else will set the infotext empty
+makeorb.show_growth_perc (Show Growth Percent) bool false
