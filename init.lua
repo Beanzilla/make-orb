@@ -15,7 +15,7 @@ makeorb = {
     },
     settings = { -- Settings
         show_growth_perc = false,
-        growth_factor = 1.0 -- IN seconds
+        growth_factor = 1.0 -- IN seconds (This was supposed to be changable in-game, but appears to not work)
     }
 }
 
@@ -48,6 +48,7 @@ makeorb.__priv__.dofile("settings") -- Process settings via gui/minetest.conf
 makeorb.__priv__.dofile("api") -- Support structs for compressors and their optional makes
 makeorb.__priv__.dofile("crop") -- Make the crop and item
 makeorb.__priv__.dofile("mapgen") -- Make the crop appear as appart of terrain generation (Note, this won't help old maps, new maps with this installed will increase the chances of finding the plant to start with this mod)
+--makeorb.__priv__.dofile("crafting", "base") -- Crafting ingredients for compressors and storage tanks
 --makeorb.dofile("compressor", "base") -- Make the compressor and use the api to define what various type of compressors can make
 --makeorb.dofile("compressor", "ground") -- Makes dirt, stone, dirt_with_grass, sand, gravel, and others appart of the ground
 --makeorb.dofile("compressor". "food") -- Makes bread, onions, carrots, wheat, rye, oats, and others appart of food and making food

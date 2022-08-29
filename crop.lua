@@ -32,12 +32,14 @@ function makeorb.__priv__.grow(pos)
             p = STAGE_2 + (120 - part)
         elseif stage == 3 then
             p = STAGE_3 + (180 - part)
-        elseif stage == 4 then
+        elseif stage == 4 then -- Might not want to include the other stages as hidden
             p = STAGE_4 + (180 - part)
-        elseif stage == 5 then
-            p = STAGE_5 + (180 - part)
+        elseif stage >= 5 then
+            --p = STAGE_5 + (180 - part)
+            p = STAGE_4
         end
-        perc = (p / MAX_PARTS) * 100.0
+        --perc = (p / MAX_PARTS) * 100.0
+        perc = (p / STAGE_4) * 100.0
 
         if makeorb.settings.show_growth_perc then
             meta:set_string("infotext", string.format("%0.1f", perc) .. "%")
