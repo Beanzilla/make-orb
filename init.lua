@@ -15,7 +15,7 @@ makeorb = {
     },
     settings = { -- Settings
         show_growth_perc = false,
-        growth_factor = 1.0 -- IN seconds (This was supposed to be changable in-game, but appears to not work)
+        growth_factor = 0.5 -- IN seconds (This was supposed to be changable in-game, but appears to not work)
     }
 }
 
